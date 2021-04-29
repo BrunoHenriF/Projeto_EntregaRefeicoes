@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoBancoDeDados
 {
-    public partial class Form_BuscarLoja : Form
+    public partial class Form_CadastroEntrega : Form
     {
-        public Form_BuscarLoja()
+        public Form_CadastroEntrega()
         {
             InitializeComponent();
         }

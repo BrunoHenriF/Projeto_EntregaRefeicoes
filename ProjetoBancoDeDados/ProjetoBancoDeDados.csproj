@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_AbaRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AbaRestaurante.Designer.cs">
+      <DependentUpon>Form_AbaRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CadastroEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CadastroEntrega.Designer.cs">
+      <DependentUpon>Form_CadastroEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CadastroPrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CadastroPrato.Designer.cs">
+      <DependentUpon>Form_CadastroPrato.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Enderecoepagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,12 +75,6 @@
     </Compile>
     <Compile Include="Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_BuscarLoja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_BuscarLoja.Designer.cs">
-      <DependentUpon>Form_BuscarLoja.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_TataDelivery.cs">
       <SubType>Form</SubType>
@@ -84,14 +96,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_AbaRestaurante.resx">
+      <DependentUpon>Form_AbaRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadastroEntrega.resx">
+      <DependentUpon>Form_CadastroEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadastroPrato.resx">
+      <DependentUpon>Form_CadastroPrato.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Enderecoepagamento.resx">
       <DependentUpon>Form_Enderecoepagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_BuscarLoja.resx">
-      <DependentUpon>Form_BuscarLoja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CadastroLoja.resx">
       <DependentUpon>Form_CadastroLoja.cs</DependentUpon>

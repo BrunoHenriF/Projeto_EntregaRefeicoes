@@ -33,13 +33,14 @@ namespace ProjetoBancoDeDados
             this.btn_cadastre_se = new System.Windows.Forms.Button();
             this.btn_cadastroloja = new System.Windows.Forms.Button();
             this.btn_cadastromotoboy = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.txt_barradebusca = new System.Windows.Forms.TextBox();
+            this.lbl_barradebusca = new System.Windows.Forms.Label();
+            this.radbtn_prato = new System.Windows.Forms.RadioButton();
+            this.radbtn_restaurante = new System.Windows.Forms.RadioButton();
+            this.radbtn_culinaria = new System.Windows.Forms.RadioButton();
+            this.radbtn_preco = new System.Windows.Forms.RadioButton();
             this.gpbox_filtros = new System.Windows.Forms.GroupBox();
+            this.btn_busca = new System.Windows.Forms.Button();
             this.gpbox_filtros.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,86 +83,106 @@ namespace ProjetoBancoDeDados
             this.btn_cadastromotoboy.Text = "Trabalhe como nosso entregador!";
             this.btn_cadastromotoboy.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txt_barradebusca
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 193);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(366, 20);
-            this.textBox1.TabIndex = 4;
+            this.txt_barradebusca.Location = new System.Drawing.Point(95, 190);
+            this.txt_barradebusca.Name = "txt_barradebusca";
+            this.txt_barradebusca.Size = new System.Drawing.Size(366, 20);
+            this.txt_barradebusca.TabIndex = 4;
+            this.txt_barradebusca.TextChanged += new System.EventHandler(this.txt_barradebusca_TextChanged);
             // 
-            // label1
+            // lbl_barradebusca
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(173, 177);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "busque um restaurante";
+            this.lbl_barradebusca.AutoSize = true;
+            this.lbl_barradebusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_barradebusca.Location = new System.Drawing.Point(91, 163);
+            this.lbl_barradebusca.Name = "lbl_barradebusca";
+            this.lbl_barradebusca.Size = new System.Drawing.Size(233, 24);
+            this.lbl_barradebusca.TabIndex = 5;
+            this.lbl_barradebusca.Text = "procure seu restaurante";
             // 
-            // radioButton1
+            // radbtn_prato
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(27, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radbtn_prato.AutoSize = true;
+            this.radbtn_prato.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_prato.Location = new System.Drawing.Point(27, 19);
+            this.radbtn_prato.Name = "radbtn_prato";
+            this.radbtn_prato.Size = new System.Drawing.Size(101, 22);
+            this.radbtn_prato.TabIndex = 6;
+            this.radbtn_prato.TabStop = true;
+            this.radbtn_prato.Text = "Por prato";
+            this.radbtn_prato.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radbtn_restaurante
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(27, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radbtn_restaurante.AutoSize = true;
+            this.radbtn_restaurante.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_restaurante.Location = new System.Drawing.Point(27, 42);
+            this.radbtn_restaurante.Name = "radbtn_restaurante";
+            this.radbtn_restaurante.Size = new System.Drawing.Size(153, 22);
+            this.radbtn_restaurante.TabIndex = 7;
+            this.radbtn_restaurante.TabStop = true;
+            this.radbtn_restaurante.Text = "Por restaurante";
+            this.radbtn_restaurante.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radbtn_culinaria
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(27, 65);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 8;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radbtn_culinaria.AutoSize = true;
+            this.radbtn_culinaria.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_culinaria.Location = new System.Drawing.Point(27, 65);
+            this.radbtn_culinaria.Name = "radbtn_culinaria";
+            this.radbtn_culinaria.Size = new System.Drawing.Size(127, 22);
+            this.radbtn_culinaria.TabIndex = 8;
+            this.radbtn_culinaria.TabStop = true;
+            this.radbtn_culinaria.Text = "Por culinária";
+            this.radbtn_culinaria.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radbtn_preco
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(27, 88);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 9;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radbtn_preco.AutoSize = true;
+            this.radbtn_preco.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_preco.Location = new System.Drawing.Point(27, 88);
+            this.radbtn_preco.Name = "radbtn_preco";
+            this.radbtn_preco.Size = new System.Drawing.Size(102, 22);
+            this.radbtn_preco.TabIndex = 9;
+            this.radbtn_preco.TabStop = true;
+            this.radbtn_preco.Text = "Por preço";
+            this.radbtn_preco.UseVisualStyleBackColor = true;
             // 
             // gpbox_filtros
             // 
-            this.gpbox_filtros.Controls.Add(this.radioButton1);
-            this.gpbox_filtros.Controls.Add(this.radioButton4);
-            this.gpbox_filtros.Controls.Add(this.radioButton2);
-            this.gpbox_filtros.Controls.Add(this.radioButton3);
-            this.gpbox_filtros.Location = new System.Drawing.Point(176, 232);
+            this.gpbox_filtros.BackColor = System.Drawing.SystemColors.Control;
+            this.gpbox_filtros.Controls.Add(this.radbtn_prato);
+            this.gpbox_filtros.Controls.Add(this.radbtn_preco);
+            this.gpbox_filtros.Controls.Add(this.radbtn_restaurante);
+            this.gpbox_filtros.Controls.Add(this.radbtn_culinaria);
+            this.gpbox_filtros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gpbox_filtros.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gpbox_filtros.Location = new System.Drawing.Point(95, 227);
             this.gpbox_filtros.Name = "gpbox_filtros";
+            this.gpbox_filtros.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gpbox_filtros.Size = new System.Drawing.Size(200, 173);
             this.gpbox_filtros.TabIndex = 10;
             this.gpbox_filtros.TabStop = false;
+            // 
+            // btn_busca
+            // 
+            this.btn_busca.Location = new System.Drawing.Point(382, 227);
+            this.btn_busca.Name = "btn_busca";
+            this.btn_busca.Size = new System.Drawing.Size(79, 27);
+            this.btn_busca.TabIndex = 11;
+            this.btn_busca.Text = "Buscar";
+            this.btn_busca.UseVisualStyleBackColor = true;
             // 
             // Form_TataDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 562);
+            this.Controls.Add(this.btn_busca);
             this.Controls.Add(this.gpbox_filtros);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_barradebusca);
+            this.Controls.Add(this.txt_barradebusca);
             this.Controls.Add(this.btn_cadastromotoboy);
             this.Controls.Add(this.btn_cadastroloja);
             this.Controls.Add(this.btn_cadastre_se);
@@ -181,13 +202,14 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.Button btn_cadastre_se;
         private System.Windows.Forms.Button btn_cadastroloja;
         private System.Windows.Forms.Button btn_cadastromotoboy;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.TextBox txt_barradebusca;
+        private System.Windows.Forms.Label lbl_barradebusca;
+        private System.Windows.Forms.RadioButton radbtn_prato;
+        private System.Windows.Forms.RadioButton radbtn_restaurante;
+        private System.Windows.Forms.RadioButton radbtn_culinaria;
+        private System.Windows.Forms.RadioButton radbtn_preco;
         private System.Windows.Forms.GroupBox gpbox_filtros;
+        private System.Windows.Forms.Button btn_busca;
     }
 }
 

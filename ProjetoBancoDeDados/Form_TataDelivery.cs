@@ -34,5 +34,10 @@ namespace ProjetoBancoDeDados
             Form_CadastroLoja f = new Form_CadastroLoja();
             f.ShowDialog();
         }
+
+        private void txt_barradebusca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
