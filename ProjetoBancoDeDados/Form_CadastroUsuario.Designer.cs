@@ -49,100 +49,112 @@ namespace ProjetoBancoDeDados
             // 
             // txt_nome
             // 
-            this.txt_nome.Location = new System.Drawing.Point(45, 24);
+            this.txt_nome.Location = new System.Drawing.Point(68, 33);
+            this.txt_nome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(400, 20);
+            this.txt_nome.Size = new System.Drawing.Size(598, 26);
             this.txt_nome.TabIndex = 0;
             // 
             // txt_sobrenome
             // 
-            this.txt_sobrenome.Location = new System.Drawing.Point(45, 78);
+            this.txt_sobrenome.Location = new System.Drawing.Point(68, 108);
+            this.txt_sobrenome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_sobrenome.Name = "txt_sobrenome";
-            this.txt_sobrenome.Size = new System.Drawing.Size(400, 20);
+            this.txt_sobrenome.Size = new System.Drawing.Size(598, 26);
             this.txt_sobrenome.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(45, 296);
+            this.textBox3.Location = new System.Drawing.Point(68, 410);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(400, 20);
+            this.textBox3.Size = new System.Drawing.Size(598, 26);
             this.textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(45, 351);
+            this.textBox4.Location = new System.Drawing.Point(68, 486);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(400, 20);
+            this.textBox4.Size = new System.Drawing.Size(598, 26);
             this.textBox4.TabIndex = 3;
             // 
             // lbl_sobrenome
             // 
             this.lbl_sobrenome.AutoSize = true;
-            this.lbl_sobrenome.Location = new System.Drawing.Point(52, 62);
+            this.lbl_sobrenome.Location = new System.Drawing.Point(78, 86);
+            this.lbl_sobrenome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sobrenome.Name = "lbl_sobrenome";
-            this.lbl_sobrenome.Size = new System.Drawing.Size(61, 13);
+            this.lbl_sobrenome.Size = new System.Drawing.Size(95, 18);
             this.lbl_sobrenome.TabIndex = 5;
             this.lbl_sobrenome.Text = "Sobrenome";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 278);
+            this.label3.Location = new System.Drawing.Point(78, 385);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(54, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Senha";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 335);
+            this.label4.Location = new System.Drawing.Point(78, 464);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 13);
+            this.label4.Size = new System.Drawing.Size(134, 18);
             this.label4.TabIndex = 7;
             this.label4.Text = "Repita sua senha";
             // 
             // lbl_nome
             // 
             this.lbl_nome.AutoSize = true;
-            this.lbl_nome.Location = new System.Drawing.Point(52, 8);
+            this.lbl_nome.Location = new System.Drawing.Point(78, 11);
+            this.lbl_nome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_nome.Name = "lbl_nome";
-            this.lbl_nome.Size = new System.Drawing.Size(35, 13);
+            this.lbl_nome.Size = new System.Drawing.Size(53, 18);
             this.lbl_nome.TabIndex = 8;
             this.lbl_nome.Text = "Nome";
             // 
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Location = new System.Drawing.Point(52, 226);
+            this.lbl_email.Location = new System.Drawing.Point(78, 313);
+            this.lbl_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(35, 13);
+            this.lbl_email.Size = new System.Drawing.Size(54, 18);
             this.lbl_email.TabIndex = 10;
             this.lbl_email.Text = "E-mail";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(45, 244);
+            this.textBox5.Location = new System.Drawing.Point(68, 338);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(400, 20);
+            this.textBox5.Size = new System.Drawing.Size(598, 26);
             this.textBox5.TabIndex = 9;
             // 
             // lbl_cpf
             // 
             this.lbl_cpf.AutoSize = true;
-            this.lbl_cpf.Location = new System.Drawing.Point(52, 118);
+            this.lbl_cpf.Location = new System.Drawing.Point(78, 163);
+            this.lbl_cpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_cpf.Name = "lbl_cpf";
-            this.lbl_cpf.Size = new System.Drawing.Size(27, 13);
+            this.lbl_cpf.Size = new System.Drawing.Size(37, 18);
             this.lbl_cpf.TabIndex = 12;
             this.lbl_cpf.Text = "CPF";
             // 
             // btn_proximo
             // 
-            this.btn_proximo.Location = new System.Drawing.Point(322, 401);
+            this.btn_proximo.Location = new System.Drawing.Point(483, 555);
+            this.btn_proximo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_proximo.Name = "btn_proximo";
-            this.btn_proximo.Size = new System.Drawing.Size(94, 32);
+            this.btn_proximo.Size = new System.Drawing.Size(141, 44);
             this.btn_proximo.TabIndex = 13;
             this.btn_proximo.Text = "Próximo";
             this.btn_proximo.UseVisualStyleBackColor = true;
@@ -150,9 +162,10 @@ namespace ProjetoBancoDeDados
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(76, 401);
+            this.btn_cancelar.Location = new System.Drawing.Point(114, 555);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(94, 32);
+            this.btn_cancelar.Size = new System.Drawing.Size(141, 44);
             this.btn_cancelar.TabIndex = 14;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
@@ -160,17 +173,19 @@ namespace ProjetoBancoDeDados
             // txt_telefone
             // 
             this.txt_telefone.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_telefone.Location = new System.Drawing.Point(45, 187);
+            this.txt_telefone.Location = new System.Drawing.Point(68, 259);
+            this.txt_telefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_telefone.Mask = "(00) 0000-0000";
             this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(400, 21);
+            this.txt_telefone.Size = new System.Drawing.Size(598, 21);
             this.txt_telefone.TabIndex = 34;
             // 
             // lbl_telefone
             // 
             this.lbl_telefone.AutoSize = true;
             this.lbl_telefone.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_telefone.Location = new System.Drawing.Point(52, 171);
+            this.lbl_telefone.Location = new System.Drawing.Point(78, 237);
+            this.lbl_telefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_telefone.Name = "lbl_telefone";
             this.lbl_telefone.Size = new System.Drawing.Size(55, 13);
             this.lbl_telefone.TabIndex = 33;
@@ -178,17 +193,18 @@ namespace ProjetoBancoDeDados
             // 
             // masktxt_cpf
             // 
-            this.masktxt_cpf.Location = new System.Drawing.Point(45, 134);
+            this.masktxt_cpf.Location = new System.Drawing.Point(68, 186);
+            this.masktxt_cpf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.masktxt_cpf.Mask = "000000000-00";
             this.masktxt_cpf.Name = "masktxt_cpf";
-            this.masktxt_cpf.Size = new System.Drawing.Size(400, 20);
+            this.masktxt_cpf.Size = new System.Drawing.Size(598, 26);
             this.masktxt_cpf.TabIndex = 35;
             // 
             // Form_CadastroUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 445);
+            this.ClientSize = new System.Drawing.Size(762, 616);
             this.Controls.Add(this.masktxt_cpf);
             this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.lbl_telefone);
@@ -205,6 +221,8 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.txt_sobrenome);
             this.Controls.Add(this.txt_nome);
+            this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_CadastroUsuario";
             this.Text = "Cadastro de usuário";
             this.ResumeLayout(false);

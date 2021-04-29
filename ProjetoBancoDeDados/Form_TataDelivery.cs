@@ -35,9 +35,18 @@ namespace ProjetoBancoDeDados
             f.ShowDialog();
         }
 
-        private void txt_barradebusca_TextChanged(object sender, EventArgs e)
+       
+
+        private void radbtn_prato_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_cadastromotoboy_Click(object sender, EventArgs e)
+        {
+            Form_CadastroEntrega f = new Form_CadastroEntrega();
+            f.ShowDialog();
+              
         }
     }
 }

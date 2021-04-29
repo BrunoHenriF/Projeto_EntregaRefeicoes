@@ -16,5 +16,24 @@ namespace ProjetoBancoDeDados
         {
             InitializeComponent();
         }
+
+        private void Chkbox_cartao_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Chkbox_cartao.Checked)
+            {
+                txt_cvv.Enabled = false;
+                txt_numetitular.Enabled = false;
+                txt_validade.Enabled = false;
+                msktxt_numcartao.Enabled = false;
+            }
+            else
+            {
+                txt_cvv.Enabled = true;
+                txt_numetitular.Enabled = true;
+                txt_validade.Enabled = true;
+                msktxt_numcartao.Enabled = true;
+            }
+
+        }
     }
 }
