@@ -104,7 +104,7 @@ namespace ProjetoBancoDeDados
             // 
             this.textBox4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(219, 47);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(165, 23);
             this.textBox4.TabIndex = 35;
@@ -113,7 +113,7 @@ namespace ProjetoBancoDeDados
             // 
             this.textBox3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(28, 118);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(179, 23);
             this.textBox3.TabIndex = 34;
@@ -122,7 +122,7 @@ namespace ProjetoBancoDeDados
             // 
             this.textBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(219, 118);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(165, 23);
             this.textBox1.TabIndex = 33;
@@ -142,7 +142,7 @@ namespace ProjetoBancoDeDados
             // 
             this.textBox2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(395, 118);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(152, 23);
             this.textBox2.TabIndex = 41;
@@ -162,7 +162,7 @@ namespace ProjetoBancoDeDados
             // 
             this.textBox6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(395, 47);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(152, 23);
             this.textBox6.TabIndex = 43;
@@ -181,7 +181,7 @@ namespace ProjetoBancoDeDados
             // 
             this.btn_cancelar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar.Location = new System.Drawing.Point(28, 478);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(141, 44);
             this.btn_cancelar.TabIndex = 48;
@@ -192,7 +192,7 @@ namespace ProjetoBancoDeDados
             // 
             this.btn_proximo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_proximo.Location = new System.Drawing.Point(404, 478);
-            this.btn_proximo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_proximo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_proximo.Name = "btn_proximo";
             this.btn_proximo.Size = new System.Drawing.Size(141, 44);
             this.btn_proximo.TabIndex = 47;
@@ -202,7 +202,7 @@ namespace ProjetoBancoDeDados
             // msktxt_numcartao
             // 
             this.msktxt_numcartao.Location = new System.Drawing.Point(19, 71);
-            this.msktxt_numcartao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.msktxt_numcartao.Margin = new System.Windows.Forms.Padding(4);
             this.msktxt_numcartao.Mask = "0000000000000000";
             this.msktxt_numcartao.Name = "msktxt_numcartao";
             this.msktxt_numcartao.Size = new System.Drawing.Size(500, 23);
@@ -221,7 +221,7 @@ namespace ProjetoBancoDeDados
             // txt_validade
             // 
             this.txt_validade.Location = new System.Drawing.Point(354, 209);
-            this.txt_validade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_validade.Margin = new System.Windows.Forms.Padding(4);
             this.txt_validade.Name = "txt_validade";
             this.txt_validade.Size = new System.Drawing.Size(166, 23);
             this.txt_validade.TabIndex = 52;
@@ -229,7 +229,7 @@ namespace ProjetoBancoDeDados
             // txt_cvv
             // 
             this.txt_cvv.Location = new System.Drawing.Point(18, 209);
-            this.txt_cvv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cvv.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cvv.Name = "txt_cvv";
             this.txt_cvv.Size = new System.Drawing.Size(167, 23);
             this.txt_cvv.TabIndex = 54;
@@ -258,7 +258,7 @@ namespace ProjetoBancoDeDados
             // 
             this.Chkbox_cartao.AutoSize = true;
             this.Chkbox_cartao.Location = new System.Drawing.Point(354, 43);
-            this.Chkbox_cartao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Chkbox_cartao.Margin = new System.Windows.Forms.Padding(4);
             this.Chkbox_cartao.Name = "Chkbox_cartao";
             this.Chkbox_cartao.Size = new System.Drawing.Size(168, 20);
             this.Chkbox_cartao.TabIndex = 57;
@@ -269,7 +269,7 @@ namespace ProjetoBancoDeDados
             // txt_numetitular
             // 
             this.txt_numetitular.Location = new System.Drawing.Point(18, 141);
-            this.txt_numetitular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_numetitular.Margin = new System.Windows.Forms.Padding(4);
             this.txt_numetitular.Name = "txt_numetitular";
             this.txt_numetitular.Size = new System.Drawing.Size(502, 23);
             this.txt_numetitular.TabIndex = 58;
@@ -287,9 +287,9 @@ namespace ProjetoBancoDeDados
             this.grp_pagamento.Controls.Add(this.lbl_cvv);
             this.grp_pagamento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_pagamento.Location = new System.Drawing.Point(22, 177);
-            this.grp_pagamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grp_pagamento.Margin = new System.Windows.Forms.Padding(4);
             this.grp_pagamento.Name = "grp_pagamento";
-            this.grp_pagamento.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grp_pagamento.Padding = new System.Windows.Forms.Padding(4);
             this.grp_pagamento.Size = new System.Drawing.Size(531, 260);
             this.grp_pagamento.TabIndex = 59;
             this.grp_pagamento.TabStop = false;
@@ -299,8 +299,36 @@ namespace ProjetoBancoDeDados
             // 
             this.cbbox_estado.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbox_estado.FormattingEnabled = true;
+            this.cbbox_estado.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
             this.cbbox_estado.Location = new System.Drawing.Point(28, 47);
-            this.cbbox_estado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbox_estado.Margin = new System.Windows.Forms.Padding(4);
             this.cbbox_estado.Name = "cbbox_estado";
             this.cbbox_estado.Size = new System.Drawing.Size(179, 24);
             this.cbbox_estado.TabIndex = 60;
@@ -326,7 +354,7 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Enderecoepagamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Endereço e Pagamento";

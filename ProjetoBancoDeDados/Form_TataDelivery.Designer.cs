@@ -181,6 +181,7 @@ namespace ProjetoBancoDeDados
             this.btn_busca.TabIndex = 11;
             this.btn_busca.Text = "Buscar";
             this.btn_busca.UseVisualStyleBackColor = true;
+            this.btn_busca.Click += new System.EventHandler(this.btn_busca_Click);
             // 
             // Form_TataDelivery
             // 

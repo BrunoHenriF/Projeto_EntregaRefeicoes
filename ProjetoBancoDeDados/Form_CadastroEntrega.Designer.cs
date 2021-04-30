@@ -30,15 +30,15 @@ namespace ProjetoBancoDeDados
         private void InitializeComponent()
         {
             this.lbl_nome = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_nome = new System.Windows.Forms.TextBox();
             this.lbl_placa = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl_cpf = new System.Windows.Forms.Label();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_confirmar = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.lbl_numCNH = new System.Windows.Forms.Label();
+            this.msktxt_placa = new System.Windows.Forms.MaskedTextBox();
+            this.msktxt_cpf = new System.Windows.Forms.MaskedTextBox();
+            this.msktxt_cnh = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lbl_nome
@@ -51,21 +51,13 @@ namespace ProjetoBancoDeDados
             this.lbl_nome.TabIndex = 0;
             this.lbl_nome.Text = "Nome";
             // 
-            // textBox1
+            // txt_nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 58);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(399, 23);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(64, 137);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(399, 23);
-            this.textBox2.TabIndex = 3;
+            this.txt_nome.Location = new System.Drawing.Point(64, 58);
+            this.txt_nome.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nome.Name = "txt_nome";
+            this.txt_nome.Size = new System.Drawing.Size(399, 23);
+            this.txt_nome.TabIndex = 1;
             // 
             // lbl_placa
             // 
@@ -76,14 +68,6 @@ namespace ProjetoBancoDeDados
             this.lbl_placa.Size = new System.Drawing.Size(43, 16);
             this.lbl_placa.TabIndex = 2;
             this.lbl_placa.Text = "Placa";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(64, 209);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(399, 23);
-            this.textBox3.TabIndex = 5;
             // 
             // lbl_cpf
             // 
@@ -98,7 +82,7 @@ namespace ProjetoBancoDeDados
             // btn_cancelar
             // 
             this.btn_cancelar.Location = new System.Drawing.Point(64, 359);
-            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(111, 39);
             this.btn_cancelar.TabIndex = 18;
@@ -108,20 +92,13 @@ namespace ProjetoBancoDeDados
             // btn_confirmar
             // 
             this.btn_confirmar.Location = new System.Drawing.Point(353, 359);
-            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_confirmar.Name = "btn_confirmar";
             this.btn_confirmar.Size = new System.Drawing.Size(111, 39);
             this.btn_confirmar.TabIndex = 17;
             this.btn_confirmar.Text = "Confirmar";
             this.btn_confirmar.UseVisualStyleBackColor = true;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(64, 288);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(399, 23);
-            this.maskedTextBox1.TabIndex = 19;
+            this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
             // lbl_numCNH
             // 
@@ -133,23 +110,47 @@ namespace ProjetoBancoDeDados
             this.lbl_numCNH.TabIndex = 20;
             this.lbl_numCNH.Text = "Número da CNH";
             // 
+            // msktxt_placa
+            // 
+            this.msktxt_placa.Location = new System.Drawing.Point(63, 136);
+            this.msktxt_placa.Mask = "aaa0000";
+            this.msktxt_placa.Name = "msktxt_placa";
+            this.msktxt_placa.Size = new System.Drawing.Size(400, 23);
+            this.msktxt_placa.TabIndex = 21;
+            // 
+            // msktxt_cpf
+            // 
+            this.msktxt_cpf.Location = new System.Drawing.Point(63, 209);
+            this.msktxt_cpf.Mask = "000000000-00";
+            this.msktxt_cpf.Name = "msktxt_cpf";
+            this.msktxt_cpf.Size = new System.Drawing.Size(400, 23);
+            this.msktxt_cpf.TabIndex = 22;
+            // 
+            // msktxt_cnh
+            // 
+            this.msktxt_cnh.Location = new System.Drawing.Point(64, 287);
+            this.msktxt_cnh.Mask = "00000000000";
+            this.msktxt_cnh.Name = "msktxt_cnh";
+            this.msktxt_cnh.Size = new System.Drawing.Size(400, 23);
+            this.msktxt_cnh.TabIndex = 23;
+            // 
             // Form_CadastroEntrega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 449);
+            this.Controls.Add(this.msktxt_cnh);
+            this.Controls.Add(this.msktxt_cpf);
+            this.Controls.Add(this.msktxt_placa);
             this.Controls.Add(this.lbl_numCNH);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_confirmar);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.lbl_cpf);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lbl_placa);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.lbl_nome);
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_CadastroEntrega";
             this.Text = "Cadastro de Entregador";
             this.ResumeLayout(false);
@@ -160,14 +161,14 @@ namespace ProjetoBancoDeDados
         #endregion
 
         private System.Windows.Forms.Label lbl_nome;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Label lbl_placa;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lbl_cpf;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_confirmar;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label lbl_numCNH;
+        private System.Windows.Forms.MaskedTextBox msktxt_placa;
+        private System.Windows.Forms.MaskedTextBox msktxt_cpf;
+        private System.Windows.Forms.MaskedTextBox msktxt_cnh;
     }
 }

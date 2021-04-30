@@ -26,6 +26,8 @@ namespace ProjetoBancoDeDados
         {
             Form_Enderecoepagamento f = new Form_Enderecoepagamento();
             f.ShowDialog();
+
+
         }
     }
 }
