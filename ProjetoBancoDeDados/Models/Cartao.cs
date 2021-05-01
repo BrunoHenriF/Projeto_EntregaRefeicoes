@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProjetoBancoDeDados.Models
 {
-    public class Cliente
+    class Cartao
     {
         public string Nome { get; set; }
-        public string RG { get; set; }
+        public string Numero { get; set; }
+        public string Validade { get; set; }
+        public string CVV { get; set; }
         public string CPF { get; set; }
-        public string Tel{ get; set; }
-        public string Email{ get; set; }
-        public string Sobrenome { get; set; }
-
     }
 }

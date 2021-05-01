@@ -16,11 +16,13 @@ namespace ProjetoBancoDeDados
 {
     public partial class Form_Enderecoepagamento : Form
     {
-        public Form_Enderecoepagamento()
+        string cpf_user;
+        public Form_Enderecoepagamento(string cpf)
         {
             InitializeComponent();
+            cpf_user = cpf;
         }
-
+        bool flag;
         private void Chkbox_cartao_CheckedChanged(object sender, EventArgs e)
         {
             if (Chkbox_cartao.Checked)
@@ -29,6 +31,7 @@ namespace ProjetoBancoDeDados
                 txt_numetitular.Enabled = false;
                 txt_validade.Enabled = false;
                 msktxt_numcartao.Enabled = false;
+                flag = false;
             }
             else
             {
@@ -36,24 +39,43 @@ namespace ProjetoBancoDeDados
                 txt_numetitular.Enabled = true;
                 txt_validade.Enabled = true;
                 msktxt_numcartao.Enabled = true;
+                flag = true;
             }
-
         }
 
         private void btn_proximo_Click(object sender, EventArgs e)
         {
-            //string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
-            //using (var conexaoBD = new SqlConnection(conexao))
-            //{
-            //    var cliente = new Cliente()
-            //    {
-                   
-            //    };
+            string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
+            using (var conexaoBD = new SqlConnection(conexao))
+            {
+                if (flag == true)
+                {
+                    var cartao = new Cartao()
+                    {
+                        Nome = txt_numetitular.Text,
+                        Numero = msktxt_numcartao.Text,
+                        Validade = txt_validade.Text,
+                        CVV = txt_cvv.Text,
+                        CPF = cpf_user
+                    };
+                    conexaoBD.Execute("INSERT INTO dbo.CARTAO(NOME, NUMERO, VALIDADE, CVV, CPF) VALUES (@Nome,@Numero,@Validade,@CVV,@CPF)", cartao);
+                }
 
-                
-            //    conexaoBD.Execute("INSERT INTO dbo.CLIENTE(NOME, TEL, CPF, EMAIL) VALUES (@Nome, @Tel, @CPF, @Email)", cliente);
-            //}
+                var endereco = new Endereco()
+                {
+                    Estado = cbbox_estado.Text,
+                    Cidade = txt_cidade.Text,
+                    CPF = cpf_user,
+                    Rua = txt_rua.Text,
+                    Numero = txt_numero.Text,
+                    CEP = txt_cep.Text,
+                    Complemento = txt_complemento.Text
+                };
 
+                conexaoBD.Execute("INSERT INTO  dbo.ENDERECO(ESTADO,CIDADE,CPF_USER,RUA,NUMERO,CEP,COMPLEMENTO) VALUES (@Estado, @Cidade, @CPF,@Rua,@Numero,@CEP,@Complemento)", endereco);
+            }
+
+            this.Close();
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

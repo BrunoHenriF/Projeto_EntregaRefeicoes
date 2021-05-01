@@ -32,10 +32,10 @@ namespace ProjetoBancoDeDados
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_FimDaCompra));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_nomeentregador = new System.Windows.Forms.TextBox();
-            this.txt_placa = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btn_finalizar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_placa = new System.Windows.Forms.TextBox();
+            this.txt_nomeentregador = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,8 +49,9 @@ namespace ProjetoBancoDeDados
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(508, 116);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Compra finalizada com sucesso!\r\nObrigado por comprar no restaurante x.\r\nSua refei" +
+            this.label1.Text = "Compra finalizada com sucesso!\r\nObrigado por comprar no Tata Delivery.\r\nSua refei" +
     "ção está sendo preparada e logo\r\nsairá pra entrega!\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox1
             // 
@@ -66,21 +67,15 @@ namespace ProjetoBancoDeDados
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seu pedido será entregue por:";
             // 
-            // txt_nomeentregador
+            // btn_finalizar
             // 
-            this.txt_nomeentregador.Location = new System.Drawing.Point(6, 30);
-            this.txt_nomeentregador.Name = "txt_nomeentregador";
-            this.txt_nomeentregador.ReadOnly = true;
-            this.txt_nomeentregador.Size = new System.Drawing.Size(313, 27);
-            this.txt_nomeentregador.TabIndex = 0;
-            // 
-            // txt_placa
-            // 
-            this.txt_placa.Location = new System.Drawing.Point(192, 71);
-            this.txt_placa.Name = "txt_placa";
-            this.txt_placa.ReadOnly = true;
-            this.txt_placa.Size = new System.Drawing.Size(127, 27);
-            this.txt_placa.TabIndex = 1;
+            this.btn_finalizar.Location = new System.Drawing.Point(91, 175);
+            this.btn_finalizar.Name = "btn_finalizar";
+            this.btn_finalizar.Size = new System.Drawing.Size(124, 44);
+            this.btn_finalizar.TabIndex = 1;
+            this.btn_finalizar.Text = "Finalizar";
+            this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
             // label3
             // 
@@ -91,15 +86,21 @@ namespace ProjetoBancoDeDados
             this.label3.TabIndex = 2;
             this.label3.Text = "Placa do veículo:";
             // 
-            // btn_finalizar
+            // txt_placa
             // 
-            this.btn_finalizar.Location = new System.Drawing.Point(91, 175);
-            this.btn_finalizar.Name = "btn_finalizar";
-            this.btn_finalizar.Size = new System.Drawing.Size(124, 44);
-            this.btn_finalizar.TabIndex = 3;
-            this.btn_finalizar.Text = "Finalizar";
-            this.btn_finalizar.UseVisualStyleBackColor = true;
-            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
+            this.txt_placa.Location = new System.Drawing.Point(192, 71);
+            this.txt_placa.Name = "txt_placa";
+            this.txt_placa.ReadOnly = true;
+            this.txt_placa.Size = new System.Drawing.Size(127, 27);
+            this.txt_placa.TabIndex = 6;
+            // 
+            // txt_nomeentregador
+            // 
+            this.txt_nomeentregador.Location = new System.Drawing.Point(6, 30);
+            this.txt_nomeentregador.Name = "txt_nomeentregador";
+            this.txt_nomeentregador.ReadOnly = true;
+            this.txt_nomeentregador.Size = new System.Drawing.Size(313, 27);
+            this.txt_nomeentregador.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -120,8 +121,9 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_FimDaCompra";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entrega";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

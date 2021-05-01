@@ -42,6 +42,9 @@ namespace ProjetoBancoDeDados
                 conexaoBD.Execute("INSERT INTO dbo.RESTAURANTE(NOME_OFI, NOME_FANT, CNPJ, TEL, ESTADO, " +
                     "CIDADE, RUA, NUMERO, CULINARIA) VALUES (@Nome_ofi, @Nome_fant, @CNPJ, @Tel, @Estado, @Cidade, @Rua, @Numero, @Culinaria)", restaurante);
             }
+
+            MessageBox.Show("Cadastro efetuado com sucesso!");
+            this.Close();
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)

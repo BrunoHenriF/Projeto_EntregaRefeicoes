@@ -45,6 +45,8 @@ namespace ProjetoBancoDeDados
             this.txt_telefone = new System.Windows.Forms.MaskedTextBox();
             this.lbl_telefone = new System.Windows.Forms.Label();
             this.masktxt_cpf = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_rg = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txt_nome
@@ -57,7 +59,7 @@ namespace ProjetoBancoDeDados
             // 
             // txt_sobrenome
             // 
-            this.txt_sobrenome.Location = new System.Drawing.Point(68, 108);
+            this.txt_sobrenome.Location = new System.Drawing.Point(68, 90);
             this.txt_sobrenome.Margin = new System.Windows.Forms.Padding(4);
             this.txt_sobrenome.Name = "txt_sobrenome";
             this.txt_sobrenome.Size = new System.Drawing.Size(598, 26);
@@ -65,7 +67,7 @@ namespace ProjetoBancoDeDados
             // 
             // txt_senha
             // 
-            this.txt_senha.Location = new System.Drawing.Point(68, 410);
+            this.txt_senha.Location = new System.Drawing.Point(68, 424);
             this.txt_senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.PasswordChar = '*';
@@ -84,7 +86,7 @@ namespace ProjetoBancoDeDados
             // lbl_sobrenome
             // 
             this.lbl_sobrenome.AutoSize = true;
-            this.lbl_sobrenome.Location = new System.Drawing.Point(78, 86);
+            this.lbl_sobrenome.Location = new System.Drawing.Point(78, 68);
             this.lbl_sobrenome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sobrenome.Name = "lbl_sobrenome";
             this.lbl_sobrenome.Size = new System.Drawing.Size(95, 18);
@@ -94,7 +96,7 @@ namespace ProjetoBancoDeDados
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 385);
+            this.label3.Location = new System.Drawing.Point(78, 401);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 18);
@@ -124,7 +126,7 @@ namespace ProjetoBancoDeDados
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Location = new System.Drawing.Point(78, 313);
+            this.lbl_email.Location = new System.Drawing.Point(78, 329);
             this.lbl_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(54, 18);
@@ -133,7 +135,7 @@ namespace ProjetoBancoDeDados
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(68, 338);
+            this.txt_email.Location = new System.Drawing.Point(68, 354);
             this.txt_email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(598, 26);
@@ -142,7 +144,7 @@ namespace ProjetoBancoDeDados
             // lbl_cpf
             // 
             this.lbl_cpf.AutoSize = true;
-            this.lbl_cpf.Location = new System.Drawing.Point(78, 163);
+            this.lbl_cpf.Location = new System.Drawing.Point(78, 191);
             this.lbl_cpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_cpf.Name = "lbl_cpf";
             this.lbl_cpf.Size = new System.Drawing.Size(37, 18);
@@ -174,7 +176,7 @@ namespace ProjetoBancoDeDados
             // txt_telefone
             // 
             this.txt_telefone.Font = new System.Drawing.Font("Verdana", 11F);
-            this.txt_telefone.Location = new System.Drawing.Point(68, 259);
+            this.txt_telefone.Location = new System.Drawing.Point(68, 287);
             this.txt_telefone.Margin = new System.Windows.Forms.Padding(4);
             this.txt_telefone.Mask = "(00) 0000-0000";
             this.txt_telefone.Name = "txt_telefone";
@@ -185,7 +187,7 @@ namespace ProjetoBancoDeDados
             // 
             this.lbl_telefone.AutoSize = true;
             this.lbl_telefone.Font = new System.Drawing.Font("Verdana", 11F);
-            this.lbl_telefone.Location = new System.Drawing.Point(78, 237);
+            this.lbl_telefone.Location = new System.Drawing.Point(78, 265);
             this.lbl_telefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_telefone.Name = "lbl_telefone";
             this.lbl_telefone.Size = new System.Drawing.Size(69, 18);
@@ -194,18 +196,38 @@ namespace ProjetoBancoDeDados
             // 
             // masktxt_cpf
             // 
-            this.masktxt_cpf.Location = new System.Drawing.Point(68, 186);
+            this.masktxt_cpf.Location = new System.Drawing.Point(68, 214);
             this.masktxt_cpf.Margin = new System.Windows.Forms.Padding(4);
             this.masktxt_cpf.Mask = "000000000-00";
             this.masktxt_cpf.Name = "masktxt_cpf";
             this.masktxt_cpf.Size = new System.Drawing.Size(598, 26);
             this.masktxt_cpf.TabIndex = 35;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(78, 131);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 18);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "RG";
+            // 
+            // txt_rg
+            // 
+            this.txt_rg.Location = new System.Drawing.Point(68, 153);
+            this.txt_rg.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_rg.Name = "txt_rg";
+            this.txt_rg.Size = new System.Drawing.Size(598, 26);
+            this.txt_rg.TabIndex = 36;
+            // 
             // Form_CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 616);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_rg);
             this.Controls.Add(this.masktxt_cpf);
             this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.lbl_telefone);
@@ -250,5 +272,7 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.MaskedTextBox txt_telefone;
         private System.Windows.Forms.Label lbl_telefone;
         private System.Windows.Forms.MaskedTextBox masktxt_cpf;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_rg;
     }
 }

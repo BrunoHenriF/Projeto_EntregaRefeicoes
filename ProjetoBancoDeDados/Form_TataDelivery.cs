@@ -17,8 +17,8 @@ namespace ProjetoBancoDeDados
 {
     public partial class Form_TataDelivery : Form
     {
+        public static List<Cliente_logado> Dados = new List<Cliente_logado>();
         
-
         public Form_TataDelivery()
         {
             InitializeComponent();
@@ -49,10 +49,6 @@ namespace ProjetoBancoDeDados
             f.ShowDialog();
 
         }
-
-        
-        
-        
         
         string filtro, texto, query_busca, selecionado;
 
@@ -127,6 +123,12 @@ namespace ProjetoBancoDeDados
             Form_CadastroEntrega f = new Form_CadastroEntrega();
             f.ShowDialog();
 
+        }
+
+        private void cadastroDePratosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_CadastroPrato f = new Form_CadastroPrato();
+            f.ShowDialog();
         }
 
         private void btn_busca_Click(object sender, EventArgs e)

@@ -41,11 +41,12 @@ namespace ProjetoBancoDeDados
             this.lbl_resultado = new System.Windows.Forms.Label();
             this.listbox_resultados = new System.Windows.Forms.ListBox();
             this.menu_principal = new System.Windows.Forms.MenuStrip();
-            this.lbl_teste = new System.Windows.Forms.Label();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastreseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastreSeuRestauranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trabalheComoNossoEntregadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_teste = new System.Windows.Forms.Label();
+            this.cadastreSeuRestauranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDePratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gpbox_filtros.SuspendLayout();
             this.menu_principal.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@ namespace ProjetoBancoDeDados
             // 
             this.txt_barradebusca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_barradebusca.Location = new System.Drawing.Point(15, 118);
-            this.txt_barradebusca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_barradebusca.Margin = new System.Windows.Forms.Padding(4);
             this.txt_barradebusca.Name = "txt_barradebusca";
             this.txt_barradebusca.Size = new System.Drawing.Size(547, 26);
             this.txt_barradebusca.TabIndex = 4;
@@ -75,8 +76,8 @@ namespace ProjetoBancoDeDados
             // 
             this.radbtn_prato.AutoSize = true;
             this.radbtn_prato.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radbtn_prato.Location = new System.Drawing.Point(40, 51);
-            this.radbtn_prato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radbtn_prato.Location = new System.Drawing.Point(32, 59);
+            this.radbtn_prato.Margin = new System.Windows.Forms.Padding(4);
             this.radbtn_prato.Name = "radbtn_prato";
             this.radbtn_prato.Size = new System.Drawing.Size(101, 22);
             this.radbtn_prato.TabIndex = 6;
@@ -89,8 +90,8 @@ namespace ProjetoBancoDeDados
             // 
             this.radbtn_nome.AutoSize = true;
             this.radbtn_nome.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radbtn_nome.Location = new System.Drawing.Point(40, 15);
-            this.radbtn_nome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radbtn_nome.Location = new System.Drawing.Point(32, 23);
+            this.radbtn_nome.Margin = new System.Windows.Forms.Padding(4);
             this.radbtn_nome.Name = "radbtn_nome";
             this.radbtn_nome.Size = new System.Drawing.Size(103, 22);
             this.radbtn_nome.TabIndex = 7;
@@ -103,8 +104,8 @@ namespace ProjetoBancoDeDados
             // 
             this.radbtn_culinaria.AutoSize = true;
             this.radbtn_culinaria.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radbtn_culinaria.Location = new System.Drawing.Point(40, 90);
-            this.radbtn_culinaria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radbtn_culinaria.Location = new System.Drawing.Point(32, 98);
+            this.radbtn_culinaria.Margin = new System.Windows.Forms.Padding(4);
             this.radbtn_culinaria.Name = "radbtn_culinaria";
             this.radbtn_culinaria.Size = new System.Drawing.Size(127, 22);
             this.radbtn_culinaria.TabIndex = 8;
@@ -117,8 +118,8 @@ namespace ProjetoBancoDeDados
             // 
             this.radbtn_preco.AutoSize = true;
             this.radbtn_preco.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radbtn_preco.Location = new System.Drawing.Point(40, 129);
-            this.radbtn_preco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radbtn_preco.Location = new System.Drawing.Point(32, 137);
+            this.radbtn_preco.Margin = new System.Windows.Forms.Padding(4);
             this.radbtn_preco.Name = "radbtn_preco";
             this.radbtn_preco.Size = new System.Drawing.Size(102, 22);
             this.radbtn_preco.TabIndex = 9;
@@ -137,9 +138,9 @@ namespace ProjetoBancoDeDados
             this.gpbox_filtros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gpbox_filtros.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.gpbox_filtros.Location = new System.Drawing.Point(15, 165);
-            this.gpbox_filtros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpbox_filtros.Margin = new System.Windows.Forms.Padding(4);
             this.gpbox_filtros.Name = "gpbox_filtros";
-            this.gpbox_filtros.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gpbox_filtros.Padding = new System.Windows.Forms.Padding(4);
             this.gpbox_filtros.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gpbox_filtros.Size = new System.Drawing.Size(386, 174);
             this.gpbox_filtros.TabIndex = 10;
@@ -150,7 +151,7 @@ namespace ProjetoBancoDeDados
             this.btn_busca.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_busca.Font = new System.Drawing.Font("Verdana", 11F);
             this.btn_busca.Location = new System.Drawing.Point(446, 173);
-            this.btn_busca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_busca.Margin = new System.Windows.Forms.Padding(4);
             this.btn_busca.Name = "btn_busca";
             this.btn_busca.Size = new System.Drawing.Size(118, 50);
             this.btn_busca.TabIndex = 11;
@@ -162,7 +163,7 @@ namespace ProjetoBancoDeDados
             // 
             this.btn_ir_para_restaurante.Font = new System.Drawing.Font("Verdana", 11F);
             this.btn_ir_para_restaurante.Location = new System.Drawing.Point(746, 493);
-            this.btn_ir_para_restaurante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ir_para_restaurante.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ir_para_restaurante.Name = "btn_ir_para_restaurante";
             this.btn_ir_para_restaurante.Size = new System.Drawing.Size(267, 44);
             this.btn_ir_para_restaurante.TabIndex = 14;
@@ -187,7 +188,7 @@ namespace ProjetoBancoDeDados
             this.listbox_resultados.FormattingEnabled = true;
             this.listbox_resultados.ItemHeight = 23;
             this.listbox_resultados.Location = new System.Drawing.Point(663, 118);
-            this.listbox_resultados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listbox_resultados.Margin = new System.Windows.Forms.Padding(4);
             this.listbox_resultados.Name = "listbox_resultados";
             this.listbox_resultados.Size = new System.Drawing.Size(426, 349);
             this.listbox_resultados.TabIndex = 12;
@@ -199,13 +200,35 @@ namespace ProjetoBancoDeDados
             this.loginToolStripMenuItem,
             this.cadastreseToolStripMenuItem,
             this.cadastreSeuRestauranteToolStripMenuItem,
-            this.trabalheComoNossoEntregadorToolStripMenuItem});
+            this.trabalheComoNossoEntregadorToolStripMenuItem,
+            this.cadastroDePratosToolStripMenuItem});
             this.menu_principal.Location = new System.Drawing.Point(0, 0);
             this.menu_principal.Name = "menu_principal";
             this.menu_principal.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
             this.menu_principal.Size = new System.Drawing.Size(1108, 25);
             this.menu_principal.TabIndex = 15;
             this.menu_principal.Text = "menuStrip1";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 19);
+            this.loginToolStripMenuItem.Text = "Login";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // cadastreseToolStripMenuItem
+            // 
+            this.cadastreseToolStripMenuItem.Name = "cadastreseToolStripMenuItem";
+            this.cadastreseToolStripMenuItem.Size = new System.Drawing.Size(81, 19);
+            this.cadastreseToolStripMenuItem.Text = "Cadastre-se";
+            this.cadastreseToolStripMenuItem.Click += new System.EventHandler(this.cadastreseToolStripMenuItem_Click);
+            // 
+            // trabalheComoNossoEntregadorToolStripMenuItem
+            // 
+            this.trabalheComoNossoEntregadorToolStripMenuItem.Name = "trabalheComoNossoEntregadorToolStripMenuItem";
+            this.trabalheComoNossoEntregadorToolStripMenuItem.Size = new System.Drawing.Size(195, 19);
+            this.trabalheComoNossoEntregadorToolStripMenuItem.Text = "Trabalhe como nosso entregador!";
+            this.trabalheComoNossoEntregadorToolStripMenuItem.Click += new System.EventHandler(this.trabalheComoNossoEntregadorToolStripMenuItem_Click);
             // 
             // lbl_teste
             // 
@@ -217,20 +240,6 @@ namespace ProjetoBancoDeDados
             this.lbl_teste.TabIndex = 16;
             this.lbl_teste.Text = "label1";
             // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.loginToolStripMenuItem.Text = "Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
-            // 
-            // cadastreseToolStripMenuItem
-            // 
-            this.cadastreseToolStripMenuItem.Name = "cadastreseToolStripMenuItem";
-            this.cadastreseToolStripMenuItem.Size = new System.Drawing.Size(81, 19);
-            this.cadastreseToolStripMenuItem.Text = "Cadastre-se";
-            this.cadastreseToolStripMenuItem.Click += new System.EventHandler(this.cadastreseToolStripMenuItem_Click);
-            // 
             // cadastreSeuRestauranteToolStripMenuItem
             // 
             this.cadastreSeuRestauranteToolStripMenuItem.Name = "cadastreSeuRestauranteToolStripMenuItem";
@@ -238,12 +247,12 @@ namespace ProjetoBancoDeDados
             this.cadastreSeuRestauranteToolStripMenuItem.Text = "Cadastre seu restaurante";
             this.cadastreSeuRestauranteToolStripMenuItem.Click += new System.EventHandler(this.cadastreSeuRestauranteToolStripMenuItem_Click);
             // 
-            // trabalheComoNossoEntregadorToolStripMenuItem
+            // cadastroDePratosToolStripMenuItem
             // 
-            this.trabalheComoNossoEntregadorToolStripMenuItem.Name = "trabalheComoNossoEntregadorToolStripMenuItem";
-            this.trabalheComoNossoEntregadorToolStripMenuItem.Size = new System.Drawing.Size(195, 19);
-            this.trabalheComoNossoEntregadorToolStripMenuItem.Text = "Trabalhe como nosso entregador!";
-            this.trabalheComoNossoEntregadorToolStripMenuItem.Click += new System.EventHandler(this.trabalheComoNossoEntregadorToolStripMenuItem_Click);
+            this.cadastroDePratosToolStripMenuItem.Name = "cadastroDePratosToolStripMenuItem";
+            this.cadastroDePratosToolStripMenuItem.Size = new System.Drawing.Size(118, 19);
+            this.cadastroDePratosToolStripMenuItem.Text = "Cadastro de pratos";
+            this.cadastroDePratosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDePratosToolStripMenuItem_Click);
             // 
             // Form_TataDelivery
             // 
@@ -260,7 +269,7 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.txt_barradebusca);
             this.Controls.Add(this.menu_principal);
             this.Font = new System.Drawing.Font("Verdana", 11F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_TataDelivery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tata Delivery";
@@ -289,8 +298,9 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.Label lbl_teste;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastreseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastreSeuRestauranteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trabalheComoNossoEntregadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastreSeuRestauranteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDePratosToolStripMenuItem;
     }
 }
 

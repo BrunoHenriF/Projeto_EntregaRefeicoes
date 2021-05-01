@@ -22,24 +22,36 @@ namespace ProjetoBancoDeDados
             InitializeComponent();
         }
 
+        string senha_digitada, senha_banco, cpf;
+
         private void btn_confirmar_Click(object sender, EventArgs e)
         {
-            //string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
-            //using (var conexaoBD = new SqlConnection(conexao))
-            //{
-            //    IEnumerable clientes = conexaoBD.Query<Cliente>("Select NOME, SENHA from Cliente");
-            //    foreach (Cliente cliente in clientes)
-            //    {
-                    
-            //    }
-            //} 
+            cpf = txt_CPF_login.Text;
+            senha_digitada = txt_senha_login.Text;
 
+            string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
+            using (var conexaoBD = new SqlConnection(conexao))
+            {
+                IEnumerable logins = conexaoBD.Query<Login>("SELECT SENHA FROM LOGIN WHERE CPF = '" + cpf + "'");
+                foreach (Login login in logins)
+                {
+                    senha_banco = login.Senha;
+                }
+            }
+
+            if (senha_digitada == senha_banco)
+            {
+                Cliente_logado obj = new Cliente_logado();
+                obj.CPF = txt_CPF_login.Text;
+                Form_TataDelivery.Dados.Add(obj);
+
+                MessageBox.Show("Login efetuado com sucesso!");
+            }
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-
         }
     }
 }

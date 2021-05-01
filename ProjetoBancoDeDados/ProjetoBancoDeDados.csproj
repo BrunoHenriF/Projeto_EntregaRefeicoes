@@ -110,9 +110,13 @@
     <Compile Include="Form_CadastroUsuario.Designer.cs">
       <DependentUpon>Form_CadastroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cartao.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Compra.cs" />
+    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Entregador.cs" />
+    <Compile Include="Models\Logado.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Pratos.cs" />
     <Compile Include="Models\Restaurante.cs" />
     <Compile Include="Program.cs" />

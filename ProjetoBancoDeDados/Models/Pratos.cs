@@ -13,6 +13,6 @@ namespace ProjetoBancoDeDados.Models
         public string Preco { get; set; }
         public string Disponibilidade { get; set; }
         public string Cod_prato { get; set; }
-
+        public string Cnpj { get; set; }
     }
 }

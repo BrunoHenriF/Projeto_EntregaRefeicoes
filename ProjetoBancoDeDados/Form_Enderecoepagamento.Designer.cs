@@ -33,13 +33,13 @@ namespace ProjetoBancoDeDados
             this.lbl_cidade = new System.Windows.Forms.Label();
             this.lbl_numero = new System.Windows.Forms.Label();
             this.lbl_Rua = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_cidade = new System.Windows.Forms.TextBox();
+            this.txt_rua = new System.Windows.Forms.TextBox();
+            this.txt_numero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_complemento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_cep = new System.Windows.Forms.TextBox();
             this.lbl_numerocartao = new System.Windows.Forms.Label();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_proximo = new System.Windows.Forms.Button();
@@ -100,32 +100,32 @@ namespace ProjetoBancoDeDados
             this.lbl_Rua.TabIndex = 36;
             this.lbl_Rua.Text = "Rua";
             // 
-            // textBox4
+            // txt_cidade
             // 
-            this.textBox4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(219, 47);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 23);
-            this.textBox4.TabIndex = 35;
+            this.txt_cidade.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cidade.Location = new System.Drawing.Point(219, 47);
+            this.txt_cidade.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_cidade.Name = "txt_cidade";
+            this.txt_cidade.Size = new System.Drawing.Size(165, 23);
+            this.txt_cidade.TabIndex = 35;
             // 
-            // textBox3
+            // txt_rua
             // 
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(28, 118);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 23);
-            this.textBox3.TabIndex = 34;
+            this.txt_rua.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_rua.Location = new System.Drawing.Point(28, 118);
+            this.txt_rua.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_rua.Name = "txt_rua";
+            this.txt_rua.Size = new System.Drawing.Size(179, 23);
+            this.txt_rua.TabIndex = 34;
             // 
-            // textBox1
+            // txt_numero
             // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(219, 118);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 23);
-            this.textBox1.TabIndex = 33;
+            this.txt_numero.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numero.Location = new System.Drawing.Point(219, 118);
+            this.txt_numero.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(165, 23);
+            this.txt_numero.TabIndex = 33;
             // 
             // label1
             // 
@@ -138,14 +138,14 @@ namespace ProjetoBancoDeDados
             this.label1.TabIndex = 42;
             this.label1.Text = "Complemento";
             // 
-            // textBox2
+            // txt_complemento
             // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(395, 118);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 23);
-            this.textBox2.TabIndex = 41;
+            this.txt_complemento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_complemento.Location = new System.Drawing.Point(395, 118);
+            this.txt_complemento.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_complemento.Name = "txt_complemento";
+            this.txt_complemento.Size = new System.Drawing.Size(152, 23);
+            this.txt_complemento.TabIndex = 41;
             // 
             // label2
             // 
@@ -158,14 +158,14 @@ namespace ProjetoBancoDeDados
             this.label2.TabIndex = 44;
             this.label2.Text = "CEP";
             // 
-            // textBox6
+            // txt_cep
             // 
-            this.textBox6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(395, 47);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 23);
-            this.textBox6.TabIndex = 43;
+            this.txt_cep.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cep.Location = new System.Drawing.Point(395, 47);
+            this.txt_cep.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_cep.Name = "txt_cep";
+            this.txt_cep.Size = new System.Drawing.Size(152, 23);
+            this.txt_cep.TabIndex = 43;
             // 
             // lbl_numerocartao
             // 
@@ -345,16 +345,16 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_proximo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txt_cep);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_complemento);
             this.Controls.Add(this.lbl_estado);
             this.Controls.Add(this.lbl_cidade);
             this.Controls.Add(this.lbl_numero);
             this.Controls.Add(this.lbl_Rua);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_cidade);
+            this.Controls.Add(this.txt_rua);
+            this.Controls.Add(this.txt_numero);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Enderecoepagamento";
@@ -373,13 +373,13 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.Label lbl_cidade;
         private System.Windows.Forms.Label lbl_numero;
         private System.Windows.Forms.Label lbl_Rua;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_cidade;
+        private System.Windows.Forms.TextBox txt_rua;
+        private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_complemento;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_cep;
         private System.Windows.Forms.Label lbl_numerocartao;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_proximo;
