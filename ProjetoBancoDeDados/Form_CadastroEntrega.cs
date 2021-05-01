@@ -38,5 +38,11 @@ namespace ProjetoBancoDeDados
                 conexaoBD.Execute("INSERT INTO dbo.ENTREGADOR(NOME, PLACA, CPF, NUM_CNH) VALUES (@Nome, @Placa, @CPF, @CNH)", entregador);
             }
         }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

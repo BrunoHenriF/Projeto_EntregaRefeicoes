@@ -31,14 +31,14 @@ namespace ProjetoBancoDeDados
         {
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.txt_sobrenome = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_senha = new System.Windows.Forms.TextBox();
+            this.txt_repetesenha = new System.Windows.Forms.TextBox();
             this.lbl_sobrenome = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_nome = new System.Windows.Forms.Label();
             this.lbl_email = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.lbl_cpf = new System.Windows.Forms.Label();
             this.btn_proximo = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
@@ -63,23 +63,23 @@ namespace ProjetoBancoDeDados
             this.txt_sobrenome.Size = new System.Drawing.Size(598, 26);
             this.txt_sobrenome.TabIndex = 1;
             // 
-            // textBox3
+            // txt_senha
             // 
-            this.textBox3.Location = new System.Drawing.Point(68, 410);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(598, 26);
-            this.textBox3.TabIndex = 2;
+            this.txt_senha.Location = new System.Drawing.Point(68, 410);
+            this.txt_senha.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_senha.Name = "txt_senha";
+            this.txt_senha.PasswordChar = '*';
+            this.txt_senha.Size = new System.Drawing.Size(598, 26);
+            this.txt_senha.TabIndex = 2;
             // 
-            // textBox4
+            // txt_repetesenha
             // 
-            this.textBox4.Location = new System.Drawing.Point(68, 486);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(598, 26);
-            this.textBox4.TabIndex = 3;
+            this.txt_repetesenha.Location = new System.Drawing.Point(68, 486);
+            this.txt_repetesenha.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_repetesenha.Name = "txt_repetesenha";
+            this.txt_repetesenha.PasswordChar = '*';
+            this.txt_repetesenha.Size = new System.Drawing.Size(598, 26);
+            this.txt_repetesenha.TabIndex = 3;
             // 
             // lbl_sobrenome
             // 
@@ -131,13 +131,13 @@ namespace ProjetoBancoDeDados
             this.lbl_email.TabIndex = 10;
             this.lbl_email.Text = "E-mail";
             // 
-            // textBox5
+            // txt_email
             // 
-            this.textBox5.Location = new System.Drawing.Point(68, 338);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(598, 26);
-            this.textBox5.TabIndex = 9;
+            this.txt_email.Location = new System.Drawing.Point(68, 338);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(598, 26);
+            this.txt_email.TabIndex = 9;
             // 
             // lbl_cpf
             // 
@@ -169,6 +169,7 @@ namespace ProjetoBancoDeDados
             this.btn_cancelar.TabIndex = 14;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // txt_telefone
             // 
@@ -212,18 +213,19 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.btn_proximo);
             this.Controls.Add(this.lbl_cpf);
             this.Controls.Add(this.lbl_email);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txt_email);
             this.Controls.Add(this.lbl_nome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_sobrenome);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_repetesenha);
+            this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.txt_sobrenome);
             this.Controls.Add(this.txt_nome);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_CadastroUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de usuário";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,14 +236,14 @@ namespace ProjetoBancoDeDados
 
         private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.TextBox txt_sobrenome;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.TextBox txt_repetesenha;
         private System.Windows.Forms.Label lbl_sobrenome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_nome;
         private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label lbl_cpf;
         private System.Windows.Forms.Button btn_proximo;
         private System.Windows.Forms.Button btn_cancelar;

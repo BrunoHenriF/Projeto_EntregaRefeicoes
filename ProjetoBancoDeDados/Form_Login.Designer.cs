@@ -40,66 +40,77 @@ namespace ProjetoBancoDeDados
             // lbl_email_login
             // 
             this.lbl_email_login.AutoSize = true;
-            this.lbl_email_login.Location = new System.Drawing.Point(19, 18);
+            this.lbl_email_login.Location = new System.Drawing.Point(28, 25);
+            this.lbl_email_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_email_login.Name = "lbl_email_login";
-            this.lbl_email_login.Size = new System.Drawing.Size(35, 13);
+            this.lbl_email_login.Size = new System.Drawing.Size(54, 18);
             this.lbl_email_login.TabIndex = 10;
             this.lbl_email_login.Text = "E-mail";
             // 
             // txt_email_login
             // 
-            this.txt_email_login.Location = new System.Drawing.Point(12, 34);
+            this.txt_email_login.Location = new System.Drawing.Point(18, 47);
+            this.txt_email_login.Margin = new System.Windows.Forms.Padding(4);
             this.txt_email_login.Name = "txt_email_login";
-            this.txt_email_login.Size = new System.Drawing.Size(200, 20);
+            this.txt_email_login.Size = new System.Drawing.Size(298, 26);
             this.txt_email_login.TabIndex = 9;
             // 
             // lbl_senha_login
             // 
             this.lbl_senha_login.AutoSize = true;
-            this.lbl_senha_login.Location = new System.Drawing.Point(19, 74);
+            this.lbl_senha_login.Location = new System.Drawing.Point(28, 102);
+            this.lbl_senha_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_senha_login.Name = "lbl_senha_login";
-            this.lbl_senha_login.Size = new System.Drawing.Size(38, 13);
+            this.lbl_senha_login.Size = new System.Drawing.Size(54, 18);
             this.lbl_senha_login.TabIndex = 12;
             this.lbl_senha_login.Text = "Senha";
             // 
             // txt_senha_login
             // 
-            this.txt_senha_login.Location = new System.Drawing.Point(12, 90);
+            this.txt_senha_login.Location = new System.Drawing.Point(18, 125);
+            this.txt_senha_login.Margin = new System.Windows.Forms.Padding(4);
             this.txt_senha_login.Name = "txt_senha_login";
             this.txt_senha_login.PasswordChar = '*';
-            this.txt_senha_login.Size = new System.Drawing.Size(200, 20);
+            this.txt_senha_login.Size = new System.Drawing.Size(298, 26);
             this.txt_senha_login.TabIndex = 11;
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(12, 150);
+            this.btn_cancelar.Location = new System.Drawing.Point(18, 208);
+            this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(83, 32);
+            this.btn_cancelar.Size = new System.Drawing.Size(124, 44);
             this.btn_cancelar.TabIndex = 16;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_confirmar
             // 
-            this.btn_confirmar.Location = new System.Drawing.Point(129, 150);
+            this.btn_confirmar.Location = new System.Drawing.Point(194, 208);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_confirmar.Name = "btn_confirmar";
-            this.btn_confirmar.Size = new System.Drawing.Size(83, 32);
+            this.btn_confirmar.Size = new System.Drawing.Size(124, 44);
             this.btn_confirmar.TabIndex = 15;
             this.btn_confirmar.Text = "Confirmar";
             this.btn_confirmar.UseVisualStyleBackColor = true;
+            this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
             // Form_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 191);
+            this.ClientSize = new System.Drawing.Size(333, 264);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_confirmar);
             this.Controls.Add(this.lbl_senha_login);
             this.Controls.Add(this.txt_senha_login);
             this.Controls.Add(this.lbl_email_login);
             this.Controls.Add(this.txt_email_login);
+            this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

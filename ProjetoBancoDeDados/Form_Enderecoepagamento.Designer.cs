@@ -187,6 +187,7 @@ namespace ProjetoBancoDeDados
             this.btn_cancelar.TabIndex = 48;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_proximo
             // 
@@ -196,8 +197,9 @@ namespace ProjetoBancoDeDados
             this.btn_proximo.Name = "btn_proximo";
             this.btn_proximo.Size = new System.Drawing.Size(141, 44);
             this.btn_proximo.TabIndex = 47;
-            this.btn_proximo.Text = "Próximo";
+            this.btn_proximo.Text = "Finalizar";
             this.btn_proximo.UseVisualStyleBackColor = true;
+            this.btn_proximo.Click += new System.EventHandler(this.btn_proximo_Click);
             // 
             // msktxt_numcartao
             // 

@@ -43,5 +43,11 @@ namespace ProjetoBancoDeDados
                     "CIDADE, RUA, NUMERO, CULINARIA) VALUES (@Nome_ofi, @Nome_fant, @CNPJ, @Tel, @Estado, @Cidade, @Rua, @Numero, @Culinaria)", restaurante);
             }
         }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

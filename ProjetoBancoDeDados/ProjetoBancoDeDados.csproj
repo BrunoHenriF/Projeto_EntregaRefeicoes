@@ -68,6 +68,12 @@
     <Compile Include="Form_CadastroPrato.Designer.cs">
       <DependentUpon>Form_CadastroPrato.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Cobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cobranca.Designer.cs">
+      <DependentUpon>Form_Cobranca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Enderecoepagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CadastroPrato.resx">
       <DependentUpon>Form_CadastroPrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Cobranca.resx">
+      <DependentUpon>Form_Cobranca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Enderecoepagamento.resx">
       <DependentUpon>Form_Enderecoepagamento.cs</DependentUpon>
