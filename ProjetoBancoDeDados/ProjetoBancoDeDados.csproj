@@ -80,6 +80,12 @@
     <Compile Include="Form_Enderecoepagamento.Designer.cs">
       <DependentUpon>Form_Enderecoepagamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_FimDaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FimDaCompra.Designer.cs">
+      <DependentUpon>Form_FimDaCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Enderecoepagamento.resx">
       <DependentUpon>Form_Enderecoepagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_FimDaCompra.resx">
+      <DependentUpon>Form_FimDaCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
