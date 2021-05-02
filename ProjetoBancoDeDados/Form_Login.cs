@@ -46,6 +46,11 @@ namespace ProjetoBancoDeDados
                 Form_TataDelivery.Dados.Add(obj);
 
                 MessageBox.Show("Login efetuado com sucesso!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha inválidos");
             }
         }
 

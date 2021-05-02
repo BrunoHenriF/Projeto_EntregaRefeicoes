@@ -29,12 +29,13 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Login));
             this.lbl_email_login = new System.Windows.Forms.Label();
-            this.txt_CPF_login = new System.Windows.Forms.TextBox();
             this.lbl_senha_login = new System.Windows.Forms.Label();
             this.txt_senha_login = new System.Windows.Forms.TextBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_confirmar = new System.Windows.Forms.Button();
+            this.txt_CPF_login = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lbl_email_login
@@ -46,14 +47,6 @@ namespace ProjetoBancoDeDados
             this.lbl_email_login.Size = new System.Drawing.Size(37, 18);
             this.lbl_email_login.TabIndex = 10;
             this.lbl_email_login.Text = "CPF";
-            // 
-            // txt_CPF_login
-            // 
-            this.txt_CPF_login.Location = new System.Drawing.Point(18, 47);
-            this.txt_CPF_login.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_CPF_login.Name = "txt_CPF_login";
-            this.txt_CPF_login.Size = new System.Drawing.Size(298, 26);
-            this.txt_CPF_login.TabIndex = 9;
             // 
             // lbl_senha_login
             // 
@@ -96,18 +89,27 @@ namespace ProjetoBancoDeDados
             this.btn_confirmar.UseVisualStyleBackColor = true;
             this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
+            // txt_CPF_login
+            // 
+            this.txt_CPF_login.Location = new System.Drawing.Point(18, 46);
+            this.txt_CPF_login.Mask = "000000000-00";
+            this.txt_CPF_login.Name = "txt_CPF_login";
+            this.txt_CPF_login.Size = new System.Drawing.Size(298, 26);
+            this.txt_CPF_login.TabIndex = 17;
+            // 
             // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 264);
+            this.Controls.Add(this.txt_CPF_login);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_confirmar);
             this.Controls.Add(this.lbl_senha_login);
             this.Controls.Add(this.txt_senha_login);
             this.Controls.Add(this.lbl_email_login);
-            this.Controls.Add(this.txt_CPF_login);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -120,10 +122,10 @@ namespace ProjetoBancoDeDados
         #endregion
 
         private System.Windows.Forms.Label lbl_email_login;
-        private System.Windows.Forms.TextBox txt_CPF_login;
         private System.Windows.Forms.Label lbl_senha_login;
         private System.Windows.Forms.TextBox txt_senha_login;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_confirmar;
+        private System.Windows.Forms.MaskedTextBox txt_CPF_login;
     }
 }

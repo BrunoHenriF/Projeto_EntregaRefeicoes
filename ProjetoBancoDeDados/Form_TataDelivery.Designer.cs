@@ -29,6 +29,7 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_TataDelivery));
             this.txt_barradebusca = new System.Windows.Forms.TextBox();
             this.lbl_barradebusca = new System.Windows.Forms.Label();
             this.radbtn_prato = new System.Windows.Forms.RadioButton();
@@ -43,10 +44,10 @@ namespace ProjetoBancoDeDados
             this.menu_principal = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastreseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trabalheComoNossoEntregadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_teste = new System.Windows.Forms.Label();
             this.cadastreSeuRestauranteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trabalheComoNossoEntregadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDePratosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_teste = new System.Windows.Forms.Label();
             this.gpbox_filtros.SuspendLayout();
             this.menu_principal.SuspendLayout();
             this.SuspendLayout();
@@ -126,7 +127,6 @@ namespace ProjetoBancoDeDados
             this.radbtn_preco.TabStop = true;
             this.radbtn_preco.Text = "Por preço";
             this.radbtn_preco.UseVisualStyleBackColor = true;
-            this.radbtn_preco.CheckedChanged += new System.EventHandler(this.radbtn_preco_CheckedChanged);
             // 
             // gpbox_filtros
             // 
@@ -223,12 +223,26 @@ namespace ProjetoBancoDeDados
             this.cadastreseToolStripMenuItem.Text = "Cadastre-se";
             this.cadastreseToolStripMenuItem.Click += new System.EventHandler(this.cadastreseToolStripMenuItem_Click);
             // 
+            // cadastreSeuRestauranteToolStripMenuItem
+            // 
+            this.cadastreSeuRestauranteToolStripMenuItem.Name = "cadastreSeuRestauranteToolStripMenuItem";
+            this.cadastreSeuRestauranteToolStripMenuItem.Size = new System.Drawing.Size(148, 19);
+            this.cadastreSeuRestauranteToolStripMenuItem.Text = "Cadastre seu restaurante";
+            this.cadastreSeuRestauranteToolStripMenuItem.Click += new System.EventHandler(this.cadastreSeuRestauranteToolStripMenuItem_Click);
+            // 
             // trabalheComoNossoEntregadorToolStripMenuItem
             // 
             this.trabalheComoNossoEntregadorToolStripMenuItem.Name = "trabalheComoNossoEntregadorToolStripMenuItem";
             this.trabalheComoNossoEntregadorToolStripMenuItem.Size = new System.Drawing.Size(195, 19);
             this.trabalheComoNossoEntregadorToolStripMenuItem.Text = "Trabalhe como nosso entregador!";
             this.trabalheComoNossoEntregadorToolStripMenuItem.Click += new System.EventHandler(this.trabalheComoNossoEntregadorToolStripMenuItem_Click);
+            // 
+            // cadastroDePratosToolStripMenuItem
+            // 
+            this.cadastroDePratosToolStripMenuItem.Name = "cadastroDePratosToolStripMenuItem";
+            this.cadastroDePratosToolStripMenuItem.Size = new System.Drawing.Size(118, 19);
+            this.cadastroDePratosToolStripMenuItem.Text = "Cadastro de pratos";
+            this.cadastroDePratosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDePratosToolStripMenuItem_Click);
             // 
             // lbl_teste
             // 
@@ -239,20 +253,6 @@ namespace ProjetoBancoDeDados
             this.lbl_teste.Size = new System.Drawing.Size(51, 18);
             this.lbl_teste.TabIndex = 16;
             this.lbl_teste.Text = "label1";
-            // 
-            // cadastreSeuRestauranteToolStripMenuItem
-            // 
-            this.cadastreSeuRestauranteToolStripMenuItem.Name = "cadastreSeuRestauranteToolStripMenuItem";
-            this.cadastreSeuRestauranteToolStripMenuItem.Size = new System.Drawing.Size(148, 19);
-            this.cadastreSeuRestauranteToolStripMenuItem.Text = "Cadastre seu restaurante";
-            this.cadastreSeuRestauranteToolStripMenuItem.Click += new System.EventHandler(this.cadastreSeuRestauranteToolStripMenuItem_Click);
-            // 
-            // cadastroDePratosToolStripMenuItem
-            // 
-            this.cadastroDePratosToolStripMenuItem.Name = "cadastroDePratosToolStripMenuItem";
-            this.cadastroDePratosToolStripMenuItem.Size = new System.Drawing.Size(118, 19);
-            this.cadastroDePratosToolStripMenuItem.Text = "Cadastro de pratos";
-            this.cadastroDePratosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDePratosToolStripMenuItem_Click);
             // 
             // Form_TataDelivery
             // 
@@ -269,10 +269,12 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.txt_barradebusca);
             this.Controls.Add(this.menu_principal);
             this.Font = new System.Drawing.Font("Verdana", 11F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_TataDelivery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tata Delivery";
+            this.Load += new System.EventHandler(this.Form_TataDelivery_Load);
             this.gpbox_filtros.ResumeLayout(false);
             this.gpbox_filtros.PerformLayout();
             this.menu_principal.ResumeLayout(false);

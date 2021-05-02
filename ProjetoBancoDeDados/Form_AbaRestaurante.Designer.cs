@@ -29,6 +29,7 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AbaRestaurante));
             this.lbl_nomerest = new System.Windows.Forms.Label();
             this.listbox_pratos = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,25 +92,28 @@ namespace ProjetoBancoDeDados
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(389, 433);
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(404, 433);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 18);
+            this.label2.Size = new System.Drawing.Size(123, 18);
             this.label2.TabIndex = 19;
             this.label2.Text = "Total a pagar:";
             // 
             // txt_total
             // 
-            this.txt_total.Location = new System.Drawing.Point(498, 430);
+            this.txt_total.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txt_total.Location = new System.Drawing.Point(533, 430);
             this.txt_total.Name = "txt_total";
-            this.txt_total.Size = new System.Drawing.Size(100, 26);
+            this.txt_total.ReadOnly = true;
+            this.txt_total.Size = new System.Drawing.Size(65, 26);
             this.txt_total.TabIndex = 20;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 18F);
-            this.label3.Location = new System.Drawing.Point(437, 35);
+            this.label3.Location = new System.Drawing.Point(448, 35);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 29);
@@ -119,19 +123,19 @@ namespace ProjetoBancoDeDados
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Verdana", 11F);
-            this.button1.Location = new System.Drawing.Point(392, 470);
+            this.button1.Location = new System.Drawing.Point(498, 470);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 32);
+            this.button1.Size = new System.Drawing.Size(100, 32);
             this.button1.TabIndex = 22;
-            this.button1.Text = "Ir para pagamento";
+            this.button1.Text = "Pagar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(240, 3);
+            this.button2.Location = new System.Drawing.Point(392, 471);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 31);
+            this.button2.Size = new System.Drawing.Size(100, 31);
             this.button2.TabIndex = 23;
             this.button2.Text = "Voltar";
             this.button2.UseVisualStyleBackColor = true;
@@ -141,9 +145,9 @@ namespace ProjetoBancoDeDados
             // 
             this.listBox_preco.FormattingEnabled = true;
             this.listBox_preco.ItemHeight = 18;
-            this.listBox_preco.Location = new System.Drawing.Point(498, 70);
+            this.listBox_preco.Location = new System.Drawing.Point(533, 70);
             this.listBox_preco.Name = "listBox_preco";
-            this.listBox_preco.Size = new System.Drawing.Size(100, 346);
+            this.listBox_preco.Size = new System.Drawing.Size(65, 346);
             this.listBox_preco.TabIndex = 24;
             // 
             // listBox_item
@@ -152,15 +156,17 @@ namespace ProjetoBancoDeDados
             this.listBox_item.ItemHeight = 18;
             this.listBox_item.Location = new System.Drawing.Point(392, 70);
             this.listBox_item.Name = "listBox_item";
-            this.listBox_item.Size = new System.Drawing.Size(100, 346);
+            this.listBox_item.Size = new System.Drawing.Size(135, 346);
             this.listBox_item.TabIndex = 25;
             // 
             // txt_descricao
             // 
+            this.txt_descricao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txt_descricao.Font = new System.Drawing.Font("Verdana", 12F);
             this.txt_descricao.Location = new System.Drawing.Point(13, 337);
             this.txt_descricao.Multiline = true;
             this.txt_descricao.Name = "txt_descricao";
+            this.txt_descricao.ReadOnly = true;
             this.txt_descricao.Size = new System.Drawing.Size(336, 117);
             this.txt_descricao.TabIndex = 26;
             // 
@@ -179,6 +185,7 @@ namespace ProjetoBancoDeDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(609, 513);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_descricao);
@@ -194,10 +201,12 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.listbox_pratos);
             this.Controls.Add(this.lbl_nomerest);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_AbaRestaurante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Restaurante";
+            this.Load += new System.EventHandler(this.Form_AbaRestaurante_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

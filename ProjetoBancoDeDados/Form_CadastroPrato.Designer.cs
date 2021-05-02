@@ -29,12 +29,12 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_CadastroPrato));
             this.lbl_nomedoprato = new System.Windows.Forms.Label();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.txt_preco = new System.Windows.Forms.TextBox();
             this.lbl_preco = new System.Windows.Forms.Label();
             this.lbl_codprato = new System.Windows.Forms.Label();
-            this.txt_CNPJ = new System.Windows.Forms.TextBox();
             this.txt_descricao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_codigo = new System.Windows.Forms.TextBox();
@@ -43,6 +43,7 @@ namespace ProjetoBancoDeDados
             this.btn_proximo = new System.Windows.Forms.Button();
             this.txt_disponibilidade = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_CNPJ = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lbl_nomedoprato
@@ -90,14 +91,6 @@ namespace ProjetoBancoDeDados
             this.lbl_codprato.Size = new System.Drawing.Size(161, 18);
             this.lbl_codprato.TabIndex = 2;
             this.lbl_codprato.Text = "CNPJ do restaurante";
-            // 
-            // txt_CNPJ
-            // 
-            this.txt_CNPJ.Location = new System.Drawing.Point(72, 124);
-            this.txt_CNPJ.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_CNPJ.Name = "txt_CNPJ";
-            this.txt_CNPJ.Size = new System.Drawing.Size(313, 26);
-            this.txt_CNPJ.TabIndex = 3;
             // 
             // txt_descricao
             // 
@@ -177,11 +170,20 @@ namespace ProjetoBancoDeDados
             this.label3.TabIndex = 51;
             this.label3.Text = "Disponibilidade";
             // 
+            // txt_CNPJ
+            // 
+            this.txt_CNPJ.Location = new System.Drawing.Point(72, 123);
+            this.txt_CNPJ.Mask = "00,000,000/0000-00";
+            this.txt_CNPJ.Name = "txt_CNPJ";
+            this.txt_CNPJ.Size = new System.Drawing.Size(313, 26);
+            this.txt_CNPJ.TabIndex = 53;
+            // 
             // Form_CadastroPrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 538);
+            this.Controls.Add(this.txt_CNPJ);
             this.Controls.Add(this.txt_disponibilidade);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_cancelar);
@@ -192,11 +194,11 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_preco);
             this.Controls.Add(this.lbl_preco);
-            this.Controls.Add(this.txt_CNPJ);
             this.Controls.Add(this.lbl_codprato);
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.lbl_nomedoprato);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_CadastroPrato";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -213,7 +215,6 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.TextBox txt_preco;
         private System.Windows.Forms.Label lbl_preco;
         private System.Windows.Forms.Label lbl_codprato;
-        private System.Windows.Forms.TextBox txt_CNPJ;
         private System.Windows.Forms.TextBox txt_descricao;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_codigo;
@@ -222,5 +223,6 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.Button btn_proximo;
         private System.Windows.Forms.TextBox txt_disponibilidade;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox txt_CNPJ;
     }
 }

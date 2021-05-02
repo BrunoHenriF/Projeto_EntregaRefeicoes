@@ -22,7 +22,6 @@ namespace ProjetoBancoDeDados
         public Form_TataDelivery()
         {
             InitializeComponent();
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,7 +46,6 @@ namespace ProjetoBancoDeDados
         {
             Form_CadastroEntrega f = new Form_CadastroEntrega();
             f.ShowDialog();
-
         }
         
         string filtro, texto, query_busca, selecionado;
@@ -92,14 +90,6 @@ namespace ProjetoBancoDeDados
             }
         }
 
-        private void radbtn_preco_CheckedChanged(object sender, EventArgs e)
-        {
-            //if (radbtn_preco.Checked == true)
-            //{
-
-            //}
-        }
-
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_Login f = new Form_Login();
@@ -122,7 +112,6 @@ namespace ProjetoBancoDeDados
         {
             Form_CadastroEntrega f = new Form_CadastroEntrega();
             f.ShowDialog();
-
         }
 
         private void cadastroDePratosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,21 +120,30 @@ namespace ProjetoBancoDeDados
             f.ShowDialog();
         }
 
+        private void Form_TataDelivery_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_busca_Click(object sender, EventArgs e)
         {
-            listbox_resultados.Items.Clear();
-            string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
-            using (var conexaoBD = new SqlConnection(conexao))
+            try
             {
-                IEnumerable restaurantes = conexaoBD.Query<Restaurante>(query_busca);
-                foreach (Restaurante restaurante in restaurantes)
+                listbox_resultados.Items.Clear();
+                string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
+                using (var conexaoBD = new SqlConnection(conexao))
                 {
-                    listbox_resultados.Items.Add(restaurante.Nome_fant);
+                    IEnumerable restaurantes = conexaoBD.Query<Restaurante>(query_busca);
+                    foreach (Restaurante restaurante in restaurantes)
+                    {
+                        listbox_resultados.Items.Add(restaurante.Nome_fant);
+                    }
                 }
             }
-
-            //Form_ResultadoBusca f = new Form_ResultadoBusca();
-            //f.ShowDialog();
+            catch (System.InvalidOperationException)
+            {
+                MessageBox.Show("Filtro não selecionado ou barra de busca vazia", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void listbox_resultados_SelectedIndexChanged(object sender, EventArgs e)
@@ -155,8 +153,19 @@ namespace ProjetoBancoDeDados
 
         private void btn_ir_para_restaurante_Click(object sender, EventArgs e)
         {
-            Form_AbaRestaurante f = new Form_AbaRestaurante(selecionado);
-            f.ShowDialog();
+            if (selecionado != "" && Dados.Count != 0)
+            {
+                Form_AbaRestaurante f = new Form_AbaRestaurante(selecionado);
+                f.ShowDialog();
+            }
+            else if (Dados.Count == 0)
+            {
+                MessageBox.Show("Faça login primeiro!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (selecionado == "")
+            {
+                MessageBox.Show("Barra de busca vazia!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

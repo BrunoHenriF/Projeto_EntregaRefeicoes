@@ -21,11 +21,6 @@ namespace ProjetoBancoDeDados
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_proximo_Click(object sender, EventArgs e)
         {
             string cpf;
@@ -44,7 +39,6 @@ namespace ProjetoBancoDeDados
                 };
 
                 conexaoBD.Execute("INSERT INTO dbo.CLIENTE(NOME, TEL, CPF, EMAIL, RG, SOBRENOME) VALUES (@Nome, @Tel, @CPF, @Email, @RG, @Sobrenome)", cliente);
-
 
                 var login = new Login()
                 {

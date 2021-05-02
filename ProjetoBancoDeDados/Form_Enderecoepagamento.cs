@@ -74,7 +74,6 @@ namespace ProjetoBancoDeDados
 
                 conexaoBD.Execute("INSERT INTO  dbo.ENDERECO(ESTADO,CIDADE,CPF_USER,RUA,NUMERO,CEP,COMPLEMENTO) VALUES (@Estado, @Cidade, @CPF,@Rua,@Numero,@CEP,@Complemento)", endereco);
             }
-
             this.Close();
         }
 

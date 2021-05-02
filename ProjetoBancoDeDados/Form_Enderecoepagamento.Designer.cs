@@ -29,6 +29,7 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Enderecoepagamento));
             this.lbl_estado = new System.Windows.Forms.Label();
             this.lbl_cidade = new System.Windows.Forms.Label();
             this.lbl_numero = new System.Windows.Forms.Label();
@@ -356,6 +357,7 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.txt_rua);
             this.Controls.Add(this.txt_numero);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Enderecoepagamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

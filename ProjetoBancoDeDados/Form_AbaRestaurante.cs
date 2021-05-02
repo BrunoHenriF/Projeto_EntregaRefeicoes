@@ -25,25 +25,13 @@ namespace ProjetoBancoDeDados
 
         double preco_prato, total = 0;
 
+        string restaurante_selecionado;
         public Form_AbaRestaurante(string selecionado)
         {
             InitializeComponent();
             
             lbl_nomerest.Text = selecionado;
-            listbox_pratos.Items.Clear();
-
-            string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
-            using (var conexaoBD = new SqlConnection(conexao))
-            {
-                IEnumerable pratos = conexaoBD.Query<Pratos>("select distinct(NOME),(PRECO), DESCRICAO FROM RESTAURANTE as A inner JOIN PRATOS as b on A.CNPJ = B.CNPJ where NOME_FANT like '%" + selecionado + "%' order by preco");
-                foreach (Pratos prato in pratos)
-                {
-                    preco.Add(prato.Nome, Double.Parse(prato.Preco));
-                    descricao.Add(prato.Nome, prato.Descricao);
-
-                    listbox_pratos.Items.Add(prato.Nome + "   R$" + prato.Preco);
-                }
-            }
+            restaurante_selecionado = selecionado;
         }
         
 
@@ -58,13 +46,31 @@ namespace ProjetoBancoDeDados
             preco_prato = preco[nome_prato_selec];
 
             total += preco_prato;
-            txt_total.Text = total.ToString();
+            txt_total.Text = "R$ " + total.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form_Cobranca f = new Form_Cobranca(total);
             f.ShowDialog();
+        }
+
+        private void Form_AbaRestaurante_Load(object sender, EventArgs e)
+        {
+            listbox_pratos.Items.Clear();
+
+            string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
+            using (var conexaoBD = new SqlConnection(conexao))
+            {
+                IEnumerable pratos = conexaoBD.Query<Pratos>("select distinct(NOME),(PRECO), DESCRICAO FROM RESTAURANTE as A inner JOIN PRATOS as b on A.CNPJ = B.CNPJ where NOME_FANT like '%" + restaurante_selecionado + "%' order by preco");
+                foreach (Pratos prato in pratos)
+                {
+                    preco.Add(prato.Nome, Double.Parse(prato.Preco));
+                    descricao.Add(prato.Nome, prato.Descricao);
+
+                    listbox_pratos.Items.Add(prato.Nome + "   R$" + prato.Preco);
+                }
+            }
         }
 
         private void listbox_pratos_SelectedIndexChanged(object sender, EventArgs e)

@@ -52,6 +52,7 @@ namespace ProjetoBancoDeDados
             this.label3 = new System.Windows.Forms.Label();
             this.rdbtn_dinheiro = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_estado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_cep = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@ namespace ProjetoBancoDeDados
             this.label8 = new System.Windows.Forms.Label();
             this.lbl_valor = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txt_estado = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -314,6 +314,15 @@ namespace ProjetoBancoDeDados
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Endereço de entrega";
             // 
+            // txt_estado
+            // 
+            this.txt_estado.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_estado.Location = new System.Drawing.Point(19, 101);
+            this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_estado.Name = "txt_estado";
+            this.txt_estado.Size = new System.Drawing.Size(179, 23);
+            this.txt_estado.TabIndex = 72;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -489,15 +498,6 @@ namespace ProjetoBancoDeDados
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
-            // txt_estado
-            // 
-            this.txt_estado.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estado.Location = new System.Drawing.Point(19, 101);
-            this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(179, 23);
-            this.txt_estado.TabIndex = 72;
-            // 
             // Form_Cobranca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -511,6 +511,7 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Cobranca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

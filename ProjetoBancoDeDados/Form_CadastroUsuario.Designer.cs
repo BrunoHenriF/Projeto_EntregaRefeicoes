@@ -29,6 +29,7 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_CadastroUsuario));
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.txt_sobrenome = new System.Windows.Forms.TextBox();
             this.txt_senha = new System.Windows.Forms.TextBox();
@@ -46,7 +47,7 @@ namespace ProjetoBancoDeDados
             this.lbl_telefone = new System.Windows.Forms.Label();
             this.masktxt_cpf = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_rg = new System.Windows.Forms.TextBox();
+            this.txt_rg = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txt_nome
@@ -67,7 +68,7 @@ namespace ProjetoBancoDeDados
             // 
             // txt_senha
             // 
-            this.txt_senha.Location = new System.Drawing.Point(68, 424);
+            this.txt_senha.Location = new System.Drawing.Point(68, 421);
             this.txt_senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.PasswordChar = '*';
@@ -96,7 +97,7 @@ namespace ProjetoBancoDeDados
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 401);
+            this.label3.Location = new System.Drawing.Point(78, 398);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 18);
@@ -217,17 +218,18 @@ namespace ProjetoBancoDeDados
             // 
             this.txt_rg.Location = new System.Drawing.Point(68, 153);
             this.txt_rg.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_rg.Mask = "00000000-0";
             this.txt_rg.Name = "txt_rg";
             this.txt_rg.Size = new System.Drawing.Size(598, 26);
-            this.txt_rg.TabIndex = 36;
+            this.txt_rg.TabIndex = 38;
             // 
             // Form_CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 616);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_rg);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.masktxt_cpf);
             this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.lbl_telefone);
@@ -245,6 +247,7 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.txt_sobrenome);
             this.Controls.Add(this.txt_nome);
             this.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_CadastroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -273,6 +276,6 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.Label lbl_telefone;
         private System.Windows.Forms.MaskedTextBox masktxt_cpf;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_rg;
+        private System.Windows.Forms.MaskedTextBox txt_rg;
     }
 }

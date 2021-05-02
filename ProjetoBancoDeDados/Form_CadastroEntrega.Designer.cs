@@ -29,6 +29,7 @@ namespace ProjetoBancoDeDados
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_CadastroEntrega));
             this.lbl_nome = new System.Windows.Forms.Label();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.lbl_placa = new System.Windows.Forms.Label();
@@ -151,6 +152,7 @@ namespace ProjetoBancoDeDados
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.lbl_nome);
             this.Font = new System.Drawing.Font("Verdana", 11F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_CadastroEntrega";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
