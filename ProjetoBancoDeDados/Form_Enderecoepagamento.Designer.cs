@@ -46,8 +46,8 @@ namespace ProjetoBancoDeDados
             this.btn_proximo = new System.Windows.Forms.Button();
             this.msktxt_numcartao = new System.Windows.Forms.MaskedTextBox();
             this.lbl_validade = new System.Windows.Forms.Label();
-            this.txt_validade = new System.Windows.Forms.TextBox();
             this.txt_cvv = new System.Windows.Forms.TextBox();
+            this.txt_validade = new System.Windows.Forms.TextBox();
             this.lbl_cvv = new System.Windows.Forms.Label();
             this.lbl_nomedotitular = new System.Windows.Forms.Label();
             this.Chkbox_cartao = new System.Windows.Forms.CheckBox();
@@ -221,21 +221,21 @@ namespace ProjetoBancoDeDados
             this.lbl_validade.TabIndex = 51;
             this.lbl_validade.Text = "Data de validade";
             // 
-            // txt_validade
-            // 
-            this.txt_validade.Location = new System.Drawing.Point(354, 209);
-            this.txt_validade.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_validade.Name = "txt_validade";
-            this.txt_validade.Size = new System.Drawing.Size(166, 23);
-            this.txt_validade.TabIndex = 52;
-            // 
             // txt_cvv
             // 
-            this.txt_cvv.Location = new System.Drawing.Point(18, 209);
+            this.txt_cvv.Location = new System.Drawing.Point(354, 209);
             this.txt_cvv.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cvv.Name = "txt_cvv";
-            this.txt_cvv.Size = new System.Drawing.Size(167, 23);
-            this.txt_cvv.TabIndex = 54;
+            this.txt_cvv.Size = new System.Drawing.Size(166, 23);
+            this.txt_cvv.TabIndex = 52;
+            // 
+            // txt_validade
+            // 
+            this.txt_validade.Location = new System.Drawing.Point(18, 209);
+            this.txt_validade.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_validade.Name = "txt_validade";
+            this.txt_validade.Size = new System.Drawing.Size(167, 23);
+            this.txt_validade.TabIndex = 54;
             // 
             // lbl_cvv
             // 
@@ -285,8 +285,8 @@ namespace ProjetoBancoDeDados
             this.grp_pagamento.Controls.Add(this.Chkbox_cartao);
             this.grp_pagamento.Controls.Add(this.lbl_validade);
             this.grp_pagamento.Controls.Add(this.lbl_nomedotitular);
-            this.grp_pagamento.Controls.Add(this.txt_validade);
             this.grp_pagamento.Controls.Add(this.txt_cvv);
+            this.grp_pagamento.Controls.Add(this.txt_validade);
             this.grp_pagamento.Controls.Add(this.lbl_cvv);
             this.grp_pagamento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grp_pagamento.Location = new System.Drawing.Point(22, 177);
@@ -387,8 +387,8 @@ namespace ProjetoBancoDeDados
         private System.Windows.Forms.Button btn_proximo;
         private System.Windows.Forms.MaskedTextBox msktxt_numcartao;
         private System.Windows.Forms.Label lbl_validade;
-        private System.Windows.Forms.TextBox txt_validade;
         private System.Windows.Forms.TextBox txt_cvv;
+        private System.Windows.Forms.TextBox txt_validade;
         private System.Windows.Forms.Label lbl_cvv;
         private System.Windows.Forms.Label lbl_nomedotitular;
         private System.Windows.Forms.CheckBox Chkbox_cartao;

@@ -27,17 +27,17 @@ namespace ProjetoBancoDeDados
         {
             if (Chkbox_cartao.Checked)
             {
-                txt_cvv.Enabled = false;
-                txt_numetitular.Enabled = false;
                 txt_validade.Enabled = false;
+                txt_numetitular.Enabled = false;
+                txt_cvv.Enabled = false;
                 msktxt_numcartao.Enabled = false;
                 flag = false;
             }
             else
             {
-                txt_cvv.Enabled = true;
-                txt_numetitular.Enabled = true;
                 txt_validade.Enabled = true;
+                txt_numetitular.Enabled = true;
+                txt_cvv.Enabled = true;
                 msktxt_numcartao.Enabled = true;
                 flag = true;
             }
@@ -48,18 +48,17 @@ namespace ProjetoBancoDeDados
             string conexao = ConfigurationManager.ConnectionStrings["conexao"].ConnectionString;
             using (var conexaoBD = new SqlConnection(conexao))
             {
-                if (flag == true)
+                
+                var cartao = new Cartao()
                 {
-                    var cartao = new Cartao()
-                    {
-                        Nome = txt_numetitular.Text,
-                        Numero = msktxt_numcartao.Text,
-                        Validade = txt_validade.Text,
-                        CVV = txt_cvv.Text,
-                        CPF = cpf_user
-                    };
-                    conexaoBD.Execute("INSERT INTO dbo.CARTAO(NOME, NUMERO, VALIDADE, CVV, CPF) VALUES (@Nome,@Numero,@Validade,@CVV,@CPF)", cartao);
-                }
+                    Nome = txt_numetitular.Text,
+                    Numero = msktxt_numcartao.Text,
+                    Validade = txt_validade.Text,
+                    CVV = txt_cvv.Text,
+                    CPF = cpf_user
+                };
+                conexaoBD.Execute("INSERT INTO dbo.CARTAO(NOME, NUMERO, VALIDADE, CVV, CPF) VALUES (@Nome,@Numero,@Validade,@CVV,@CPF)", cartao);
+                
 
                 var endereco = new Endereco()
                 {
