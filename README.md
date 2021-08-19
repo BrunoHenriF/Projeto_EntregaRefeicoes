@@ -1,4 +1,4 @@
-#Aplicação de Entrega de Refeições
+# Aplicação de Entrega de Refeições
 
 Projeto desenvolvido para a disciplina de Banco de Dados da Universidade Federal do ABC. 
 O projeto consiste numa aplicação desktop desenvolvida com Windows Forms e C# que simula um e-commerce de refeições online.
